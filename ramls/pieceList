@@ -1,0 +1,35 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "itemid": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "itemname": {
+      "type": "string"
+    },
+    "returnday": {
+      "type": "string"
+    },
+    "returntime": {
+      "type": "string"
+    },
+    "pdf": {
+      "type": "string"
+    },
+    "piece_list": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

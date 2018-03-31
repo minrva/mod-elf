@@ -1,0 +1,72 @@
+#%RAML 0.8
+title: ELF
+baseUri: https://minrva.library.illinois.edu/api/elf
+version: v1.0.0
+
+schemas: 
+  - itemInfo: !include itemInfo.json
+  - itemInfoCollection: !include itemInfoCollection.json
+  - pieceList: !include pieceList.json
+  - pieceListCollection: !include pieceListCollection.json
+  - pgPieces: !include pgPieces.json
+  - emailReturn: !include emailReturn.json
+  - emailReturnCollection: !include emailReturnCollection.json
+
+traits:
+  - secured: !include raml-util/traits/auth.raml
+  - pageable: !include raml-util/traits/pageable.raml
+  - searchable: !include raml-util/traits/searchable.raml
+  - language: !include raml-util/traits/language.raml
+
+resourceTypes:
+- collection: !include raml-util/rtypes/collection.raml
+- collection-item: !include raml-util/rtypes/item-collection.raml
+
+/iteminfo:
+  type:
+    collection:
+      exampleCollection: !include examples/itemInfoCollection.json
+      exampleItem: !include examples/itemInfo.json
+      schemaCollection: itemInfoCollection
+      schemaItem: itemInfo
+      
+  get:
+    is: [
+      searchable: {description: "with valid searchable fields", example: "title=aaa"},
+      pageable
+    ]
+    description: Returns a list of items.
+  post:
+    is: [
+      searchable: {description: "with valid searchable fields", example: "title=aaa"},
+      pageable
+    ]
+    description: Returns a list of items.
+
+/emailer:
+  type:
+    collection:
+      exampleCollection: !include examples/pieceListCollection.json
+      exampleItem: !include examples/pieceList.json
+      schemaCollection: pieceListCollection
+      schemaItem: pieceList
+
+  get:
+  post:
+  
+  /{itemId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/pgPieces.json
+        schema: pgPieces
+
+/emailreturn:
+  type:
+    collection:
+      exampleCollection: !include examples/emailReturnCollection.json
+      exampleItem: !include examples/emailReturn.json
+      schemaCollection: emailReturnCollection
+      schemaItem: emailReturn
+
+  delete:
+  post:

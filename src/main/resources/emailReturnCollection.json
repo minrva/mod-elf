@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "items": {
+            "type": "array",
+            "id": "emailReturn",
+            "items": {
+                "type": "object",
+                "$ref": "emailReturn"
+            }
+        },
+        "total_records": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "emailReturn",
+        "total_records"
+    ]
+}

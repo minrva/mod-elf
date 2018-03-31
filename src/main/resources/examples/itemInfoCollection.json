@@ -1,0 +1,32 @@
+{
+  "iteminfo": [
+    {
+			"id": "0",
+			"itemid": "23fdb0bc-ab58-442a-b326-577a96204487",
+			"copy_number": "1",
+			"total_pieces": "1",
+			"price": "$70.00",
+			"piece_list": [
+			"Mini DisplayPort to VGA Adapter."
+			]
+		},
+		{
+		"id": "1",
+		"itemid": "81335b5b-84f2-4e1a-b154-b010978cd09b",
+		"copy_number": "1",
+		"total_pieces": "8",
+		"price": "$500.00",
+		"piece_list": [
+		"Projector (main unit)",
+		"Power cable",
+		"VGA cable",
+		"HDMI cable",
+		"Headphone cable",
+		"Remote control",
+		"Apple mini displayport to VGA adapter",
+		"Quick start guide."
+		]
+		}
+  ],
+  "total_records": 2
+}

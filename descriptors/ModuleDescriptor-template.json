@@ -1,0 +1,38 @@
+{
+  "id": "${artifactId}-${version}",
+  "name": "Elf Module",
+  "provides": [ {
+    "id": "elf",
+    "version": "1.0",
+    "handlers": [ {
+      "methods": [ "GET", "POST" ],
+      "pathPattern": "/login"
+    }, {
+      "methods": [ "GET", "POST" ],
+      "pathPattern": "/user"
+    }, {
+      "methods": [ "GET", "POST" ],
+      "pathPattern": "/iteminfo"
+    }, {
+      "methods": [ "GET" ],
+      "pathPattern": "/loans"
+    }, {
+      "methods": [ "GET", "POST" ],
+      "pathPattern": "/emailer"
+    }, {
+      "methods": [ "GET", "DELETE" ],
+      "pathPattern": "/emailer/{id}"
+    }, {
+      "methods": [ "GET", "DELETE", "POST" ],
+      "pathPattern": "/emailreturn"
+    } ]
+  }, {
+    "id": "_tenant",
+    "version": "1.0",
+    "interfaceType" : "system",
+    "handlers" : [ {
+      "methods" : [ "POST", "DELETE" ],
+      "pathPattern" : "/_/tenant"
+    } ]
+  } ]
+}

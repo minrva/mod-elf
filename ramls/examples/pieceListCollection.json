@@ -1,0 +1,36 @@
+{
+  "iteminfo": [
+    {
+			"id": "0",
+			"itemid": "23fdb0bc-ab58-442a-b326-577a96204487",
+			"email": "ben@gmail.com",
+			"itemname": "Asus Tablet",
+			"returnday": "October 2nd, 2018",
+			"returntime": "11:00 PM",
+			"pdf": "jfioewjfjeio",
+			"piece_list": [
+			"Mini DisplayPort to VGA Adapter."
+		]
+		},
+		{
+		"id": "1",
+		"itemid": "81335b5b-84f2-4e1a-b154-b010978cd09b",
+		"email": "ben@gmail.com",
+		"itemname": "Projector",
+		"returnday": "October 2nd, 2018",
+		"returntime": "11:00 PM",
+		"pdf": "jfioewjfjeio",
+		"piece_list": [
+		"Projector (main unit)",
+		"Power cable",
+		"VGA cable",
+		"HDMI cable",
+		"Headphone cable",
+		"Remote control",
+		"Apple mini displayport to VGA adapter",
+		"Quick start guide."
+		]
+		}
+  ],
+  "total_records": 2
+}
